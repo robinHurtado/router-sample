@@ -2,7 +2,7 @@ import React from 'react';
 import { Redirect } from 'react-router-dom';
 
 const Books = (props) => {
-  console.log('the props:',props);
+  console.log('en Books:',props);
   return (
     <div>
       <h1>List of Books</h1>

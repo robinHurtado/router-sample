@@ -1,13 +1,14 @@
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
 
-const Home = ({ className }) => {
+const Home = (props) => {
+  console.log("En home:",props)
   return (
     <div>
       <h1>Welcome You!!</h1>
       <h3>This is the Home page!!</h3>
       <ul>
-        <li><Link to="/songs">Songs</Link></li>
+        <li><Link to="/movies">Movies</Link></li>
         <li>
           <NavLink
             to="/books"

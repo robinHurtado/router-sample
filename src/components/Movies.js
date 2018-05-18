@@ -6,7 +6,6 @@ const Movies = (props) => {
   return (
     <div>
       <h1>List of Movies</h1>
-      <Redirect to="/idk" />
     </div>
   );
 };

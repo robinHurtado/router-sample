@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Home = (props) => {
   console.log("En home:",props)
@@ -9,18 +9,9 @@ const Home = (props) => {
       <h3>This is the Home page!!</h3>
       <ul>
         <li><Link to="/movies">Movies</Link></li>
-        <li>
-          <NavLink
-            to="/books"
-            activeStyle={{
-             color: 'black',
-             fontWeight: 'bold'
-            }}
-          >
-            Books
-          </NavLink>
-        </li>
         <li><Link to="/articles">Articles</Link></li>
+        <li><Link to="/books">Books</Link>
+        </li>
       </ul>
     </div>
   );

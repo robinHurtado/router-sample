@@ -1,10 +1,9 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Link, NavLink, Redirect } from "react-router-dom";
+import { Route, Link } from "react-router-dom";
 
 import Home from './components/Home';
 
 const App = () => (
-  <Router>
     <div>
       <ul>
         <li>
@@ -22,7 +21,6 @@ const App = () => (
       <Route path="/about" component={About} />
       <Route path="/topics" component={Topics} />
     </div>
-  </Router>
 );
 
 const About = () => (

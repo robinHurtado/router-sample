@@ -11,15 +11,7 @@ const App = () => (
           <Link to="/">Home</Link>
         </li>
         <li>
-          <NavLink 
-            to="/about"
-            activeStyle={{
-              color: 'black',
-              fontWeight: 'bold'
-            }}
-          >
-            About
-          </NavLink>
+          <Link to="/about">About</Link>
         </li>
         <li>
           <Link to="/topics">Topics</Link>
@@ -29,25 +21,13 @@ const App = () => (
       <Route exact path="/" component={Home} />
       <Route path="/about" component={About} />
       <Route path="/topics" component={Topics} />
-      <Route path="/other-place" component={Other} />
     </div>
   </Router>
 );
 
-const Other = (props) => (
-  <div>
-    {console.log("state passed:",props.location.state)}
-    this other component
-  </div>
-);
-
-const About = (props) => (
+const About = () => (
   <div>
     <h2>About</h2>
-    <Redirect to={{
-      pathname: '/other-place',
-      state: { fromOther: true }
-    }}/>
   </div>
 );
 
